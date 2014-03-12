@@ -1,0 +1,194 @@
+/* -- Theme controll panel --> Begin -- */
+
+#control_panel {
+	position:fixed;
+    top:30px;
+    left:-210px;
+    z-index: 999;
+    padding: 16px;
+    width:178px;
+    background-color:#fafafa;
+    color:#3d3d3d;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+#control_panel > div > span {
+    display: block;
+	margin-left: 2px;
+	color: #3d3d3d;
+	font-size: 0.917em;
+	text-transform: uppercase;
+	font-family: Arial;
+}
+
+#control_panel ul {
+    overflow: hidden;
+	padding-bottom: 5px;
+}
+
+#control_panel li {
+    float:left;
+    margin:2px;
+}
+
+#control_panel li.active {
+    border-color:#000;
+}
+
+#control_panel li a {
+    width:31px;
+    height:31px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    display:block;
+}
+
+#control_panel .restore_button_wrapper {
+	clear: both;
+	text-align:center;
+    padding:10px 0 0 0;
+}
+
+
+#control_label {
+    position:absolute;
+    right:-29px;
+    top:20px;
+    width:29px;
+    height:31px;
+    background:url('../images/theme_control_bg.png') no-repeat center center #fafafa;
+    border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+    -webkit-border-radius:0 5px 5px 0;
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+#control_label:hover {
+	background-color: #86b602;
+	-webkit-box-shadow: inset 0 0 10px #686868;
+	-moz-box-shadow: inset 0 0 10px #686868;
+	box-shadow: inset 0 0 10px #686868;
+}
+
+/* Color --> Begin */
+
+#color_scheme,
+#patterns,
+#backgrounds,
+.style_block {
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	border-bottom: 1px dotted #b7b6b6;
+}
+
+#color_scheme a.color-1 {background-color: #2c2c2c;}
+#color_scheme a.color-2 {background-color: #40272a;}
+#color_scheme a.color-3 {background-color: #434768;}
+#color_scheme a.color-4 {background-color: #3d6363;}
+#color_scheme a.color-5 {background-color: #2a4f32;}
+#color_scheme a.color-6 {background-color: #514437;}
+#color_scheme a.color-7 {background-color: #335f7d;}
+#color_scheme a.color-8 {background-color: #53514d;}
+#color_scheme a.color-9 {background-color: #600516;}
+
+/* Color --> End */
+
+
+/* Patterns --> Begin */
+
+#control_panel #patterns a,
+#control_panel #backgrounds a {
+  background-image: url('../images/patterns_sprite.png');
+  background-repeat: no-repeat;
+  border: 1px solid #b9b9b9;
+  width: 29px;
+  height: 29px;
+}
+
+#control_panel #patterns .active a,
+#control_panel #backgrounds .active a {
+	border-color: #434343;
+}
+
+#patterns .pattern-1 {background-position: 0 0;}
+#patterns .pattern-2 {background-position: -30px 0;}
+#patterns .pattern-3 {background-position: -60px 0;}
+#patterns .pattern-4 {background-position: -90px 0;}
+#patterns .pattern-5 {background-position: -120px 0;}
+#patterns .pattern-6 {background-position: 0 -30px;}
+#patterns .pattern-7 {background-position: -30px -30px;}
+#patterns .pattern-8 {background-position: -60px -30px;}
+#patterns .pattern-9 {background-position: -90px -30px;}
+#patterns .pattern-10 {background-position: -120px -30px;}
+
+/* Patterns --> End */
+
+
+/* Backgrounds --> Begin */
+
+#backgrounds .background-1 {background-position: 0 -60px;}
+#backgrounds .background-2 {background-position: -30px -60px;}
+#backgrounds .background-3 {background-position: -60px -60px;}
+#backgrounds .background-4 {background-position: -90px -60px;}
+#backgrounds .background-5 {background-position: -120px -60px;}
+#backgrounds .background-6 {background-position: 0 -90px;}
+#backgrounds .background-7 {background-position: -30px -90px;}
+#backgrounds .background-8 {background-position: -60px -90px;}
+#backgrounds .background-9 {background-position: -90px -90px;}
+#backgrounds .background-10 {background-position: -120px -90px;}
+#backgrounds .background-11 {background-position: 0 -120px;}
+#backgrounds .background-12 {background-position: -30px -120px;}
+#backgrounds .background-13 {background-position: -60px -120px;}
+#backgrounds .background-14 {background-position: -90px -120px;}
+#backgrounds .background-15 {background-position: -120px -120px;}
+
+/* Backgrounds --> End */
+
+.style_block select {
+	margin: 2px 0;
+	padding: 2px;
+	color: #777;
+	width: 178px;
+}
+
+.links_color_wrapper {
+    padding:0;
+}
+
+.links_color_wrapper > span {
+    float:left;
+	line-height: 3em;
+}
+
+.links_color_wrapper .colorPicker {
+    position: relative;
+	float:right;
+    height:31px;
+    width:31px;
+	border: 1px solid #b9b9b9;
+	cursor: pointer;
+}
+
+#samplespicker {
+	position: relative;
+}
+
+.links_color_wrapper .colorPicker:after,
+#samplespicker:after {
+	position: absolute;
+	right: -4px;
+	bottom: -4px;
+	width: 11px;
+	height: 11px;
+	overflow: hidden;
+	background: url(../images/colorpicker_select.png);
+	content: "";
+}
+
+/* -- Theme controll panel --> End -- */

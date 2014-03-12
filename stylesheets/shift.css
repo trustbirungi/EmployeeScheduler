@@ -1,0 +1,40 @@
+.schedulecell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	padding: 2px;
+}
+.timecell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	background-color: #7A9F17;
+	font-size: 11px;
+	padding: 0px;
+}
+
+.freecell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 16px !important;
+	width: 65px;
+	height: 20px;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	padding: 0px;
+}
+
+.daycell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	background-color: #F0F0E2;
+	font-size: 11px;
+	padding: 0px;
+}

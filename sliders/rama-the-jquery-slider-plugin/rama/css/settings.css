@@ -1,0 +1,497 @@
+/*----------------------------------------------------------------------------- 
+
+	-	RAMA BANNER ROTATOR -
+
+Screen Stylesheet 
+
+version:   	1.0 
+date:      	09/18/11 
+author:		freshline
+email:     	support@version-four.com 
+website:   	http://www.version-four.com
+-----------------------------------------------------------------------------*/
+
+#example  {
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	border-bottom: 1px solid #fff;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	box-shadow: 0 10px 10px rgba(0,0,0,.05);
+}
+
+/******************************
+	- CUSTOM TOOLBOX - 
+******************************/
+
+.custom_toolbox {
+	background-color:#303030 !important;		
+	
+	/*	To Put it on the left side:
+		margin-left:10px !important;
+		float:left !important;	
+	*/
+	
+	/* To Put it on the Right Side:
+		margin-right:10px !important;
+		float:right !important;
+	*/
+	
+	/* To put it on the middle:
+		maring-right:auto !important;
+		margin-left:auto !important;
+		float:none !important;
+	*/
+	
+	margin-right:auto !important;
+	margin-left:auto !important;
+	float:none !important;
+	top:320px !important;						/* The Top POsition of the Navigation Toolbox */
+	background:transparent !important;
+	-webkit-border-radius:0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	-webkit-box-shadow: none;    /*0px 0px 6px 0px  #1f2120 !important;*/
+	-moz-box-shadow: none;    /*0px 0px 6px 0px  #1f2120 !important;*/
+	box-shadow: none;    /*0px 0px 6px 0px  #1f2120 !important;*/
+}	
+
+
+/*--------------------------------------------------------------------------------------------------------------------------
+  
+											-THE SKIN SETTINGS  -
+ 
+---------------------------------------------------------------------------------------------------------------------------*/
+
+/***********************************************/
+/*------   THEME TOOLBOX SETTINGS ------*/
+/***********************************************/
+
+.sport_mini_thumbnail_buttons {
+	background-image:url(../assets/navigation/buttons.png);
+}
+
+.sport_previous {
+	background-image:url(../assets/navigation/nextprev.png);
+}
+
+.sport_next {
+	background-image:url(../assets/navigation/nextprev.png);
+}
+.sport_image_thumbnail {	
+	margin-top:-70px !important;
+	z-index:11;
+	background-color:#fff !important;	
+}
+
+.sport_countdown {
+  background-image:url(../assets/loader/timer_white.png) !important;
+  
+}
+
+.sport_image_thumbnail_arrow{
+	background-image:url(../assets/navigation/arrow_down_white.png) !important;
+	z-index:11;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------
+  
+											-BASIC / DEAFULT SETTINGS. NO NEED TO MODIFICATE -
+ 
+---------------------------------------------------------------------------------------------------------------------------*/
+
+.noFilterClass {
+	filter:none !important;
+}
+
+/*---------------------------------------
+	- CLEARING THE DEFAULT SETTINGS - 
+-----------------------------------------*/
+.frames_slider ul, .frames_slider li { 
+    margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; 
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+
+/*-------------------------------------------------
+	- The Default Settings for Each Banner - 
+	- Oll Theme Relevant Settings are  - 
+	- idntified via Theme Names in ID and Class -
+---------------------------------------------------*/
+
+.none_frame{		
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;			
+	display:none;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family: 'Oswald', sans-serif;
+	color: #000;	
+	-webkit-border-radius:0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	z-index:1;
+}
+
+/*------------------------------
+	-  Mask on Images -
+--------------------------------*/
+
+.frames_slider #mask {
+	position:absolute;
+	overflow:hidden;
+	-webkit-border-radius:0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+/*--------------------------------------------------------
+	- The Loader Size, Source and position on the Banner
+----------------------------------------------------------*/
+.frames_slider .loader{
+	background-image:url(../assets/loader/loader_round_blue.gif);
+	background-repeat:none;
+	width:18px;
+	height:18px;
+	margin-left:auto;
+	margin-right:auto;
+	top:45%;	
+	z-index:1499;
+	position:relative;
+	
+}
+
+
+
+/*--------------------------------------------
+	-	The Logo in the right top Corner -
+----------------------------------------------*/
+.frames_slider #bannerlogo {
+	position:absolute;
+	left:765px;
+	top:5px;
+	z-index:1500;
+	cursor:point;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#bannerlogo a:link {border:none;}
+#bannerlogo a:visited {border:none;}
+
+.frames_slider #bannerlogo img{
+	border-style:none;	
+	border:none;
+}
+
+
+/*----------------------------------------------------------------
+	-	Image Thumbnails, borders, Marings, rounded corners - 
+------------------------------------------------------------------*/
+.frames_slider #image_thumbnail {	
+	position:absolute;
+	border: 1px solid #000;
+	background-color:#1a1a1a;	
+	-webkit-border-radius:3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 4px 0px  #1f2120;
+	-moz-box-shadow:  0px 0px 4px 0px  #1f2120;
+	box-shadow: 0px 0px 4px 0px  #1f2120;	
+	cursor:pointer;
+	z-index:990;
+}
+
+/*---------------------------------------------------
+	-	Small Arrow under the Image Thumbnails -
+-----------------------------------------------------*/
+.frames_slider #image_thumbnail_arrow{
+	width:26px;
+	height:13px;	
+	background-image:url(../assets/navigation/arrow_down_black.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	z-index:4150 !important;
+}
+
+/*-------------------------------------------
+	- Toolbox (thumbnail, next,prev holder)
+---------------------------------------------*/
+.frames_slider #toolbox {
+	position:relative;
+	top:365px !important;
+	left: 40%;
+	float:left !important;
+	padding:0;
+	width:auto;
+	height:30px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #dfdfdf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dfdfdf));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #dfdfdf);
+  	background: -o-linear-gradient(rgb(242,242,242),rgb(223,223,223));
+  	-pie-background: linear-gradient(rgb(242,242,242),rgb(223,223,223));
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.ie7 .frames_slider #toolbox {
+	width: 161px !important;
+	behavior: url(../js/PIE.htc);
+}
+
+/*-------------------------------------
+	- Toolbox - Next Button -
+--------------------------------------*/
+.frames_slider #toolbox #next {
+	margin-top:6px;
+	margin-left: 5px;
+	float:left;
+	overflow:hidden;
+	background-image:url(../assets/navigation/nextprev.png);
+	background-position:top left;
+	width:19px;
+	height:19px;
+	cursor:pointer;	
+}
+
+/*-------------------------------------
+	- Toolbox - Prev Button -
+--------------------------------------*/
+.frames_slider #toolbox #previous {
+	margin-top:6px;
+	margin-right: 2px;
+	float:right;
+	overflow:hidden;
+	background-image:url(../assets/navigation/nextprev.png);
+	background-position:top right;
+	width:19px;
+	height:19px;
+	cursor:pointer;
+}
+
+/*------------------------------------------
+	- Toolbox - divider between buttons -
+--------------------------------------------*/
+.frames_slider #toolbox #mini_divider {
+	margin-left:3px;
+	margin-right:1px;
+	float:right;
+	overflow:hidden;
+/*	background:url(../assets/navigation/toolbar_separator.png) no-repeat center center;;*/
+	width:2px;
+	height:30px;
+}
+
+/*-----------------------------------------
+	- Toolbox - Mini Thumbnail Buttons -
+-------------------------------------------*/
+.frames_slider #toolbox .mini_thumbnail_buttons {
+	margin-top:5px;
+	float:right;
+	overflow:hidden;
+	background-image:url(../assets/navigation/buttons.png);
+	background-position:top left;
+	width:22px;
+	height:22px;
+	cursor:pointer;
+}
+
+.frames_slider .pause_sign {
+	background:url(../assets/navigation/pause.png) no-repeat;	
+	width:35px;
+	height:37px;	
+	position:absolute;
+	z-index:4100;
+}
+
+.countdown {
+    background-image: url(../assets/loader/timer_white.png);
+    height: 10px;
+    margin-left: 6px;
+    margin-top: 6px;
+    position: relative;
+    width: 10px;
+    z-index: 4055;
+}
+/*----------------------------------------------------------------------------- 
+
+- RAMA SLIDER -
+
+Screen Stylesheet 
+
+version:   	1.0 
+date:      	07/27/11 
+author:		freshline
+email:     	support@version-four.com 
+website:   	http://www.version-four.com
+-----------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------
+ 
+								- THE LAYERS ON THE RAMA BANNER -
+								
+		All Object (Text, Images) on the Banner Layer will be set via the Content.css 
+	You can of course use your own styles as well. We only recommend to split the css files,
+							to make better overview of your files.
+  
+   Position are always absolute. Position 0,0 is the left top corner of the banner inside the Frame.
+  
+---------------------------------------------------------------------------------------------------------*/
+  
+
+/*--------------------------------------------------
+	-	 BANNER 1 - 1/10 
+-----------------------------------------------------*/
+.logo_1 {	
+	left:265px;
+	top:21px;
+	position:absolute;
+}
+
+ .title_1 {	
+	font-size:2.5em;	
+	font-style:italic;
+	font-weight:normal;
+	color: #fff;
+	padding:10px 30px 15px 20px;	
+	left:40px;
+	top:255px;
+	position:absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+ .description_1 {
+	font-size:1.5em;
+	text-align:center;
+	color: #88d600;			
+	left:60px;
+	top:287px;
+	position:absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+/*--------------------------------------------------
+	-	 BANNER 1 - 2/10 
+-----------------------------------------------------*/
+
+.title_2 {	
+	font-size:2.5em;	
+	font-weight:normal;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;	
+	left:370px;
+	top:215px;
+	position:absolute;
+}
+
+.description_2 {
+	font-size:1.5em;
+	color: #fff;		
+	left:370px;
+	top:200px;
+	position:absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+/*--------------------------------------------------
+	-	 BANNER 1 - 3/10 
+-----------------------------------------------------*/
+
+ .title_3 {	
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:2.5em;	
+	font-style:italic;
+	font-weight:normal;
+	color: #88d600;	
+	padding:10px 30px 15px 20px;	
+	left:40px;
+	top:250px;
+	position:absolute;
+}
+
+ .description_3 {
+	font-size:1.5em;
+	text-align:center;
+	color: #fff;		
+	left:60px;
+	top:287px;
+	position:absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+/*--------------------------------------------------
+	-	 BANNER 1 - 4/10 
+-----------------------------------------------------*/
+
+ .title_4 {	
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:2.5em;	
+	font-style:italic;
+	font-weight:normal;
+	color: #fff;
+	padding:10px 30px 15px 20px;	
+	left:40px;
+	top:180px;
+	position:absolute;
+}
+
+ .description_4 {
+	font-size:1.5em;
+	text-align:center;
+	color: #fff;			
+	left:60px;
+	top:175px;
+	position:absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*--------------------------------------------------
+	-	 BANNER 1 - 5/10 
+-----------------------------------------------------*/
+
+.title_5 {	
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:2.5em;	
+	font-style:italic;
+	font-weight:normal;
+	color:#1f2123;	
+	left:350px;
+	top:250px;
+	position:absolute;
+}
+
+.description_5 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:1.5em;
+	font-style:italic;
+	color: #1f2123;		
+	left:350px;
+	top:285px;
+	position:absolute;
+}
+

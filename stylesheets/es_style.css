@@ -1,0 +1,122 @@
+
+.profile {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+	color: 405679;
+	text-decoration: none;
+}
+a.profile:hover { text-decoration: underline;}
+
+.error {
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	font-size: 12pt; 
+}
+.copyright { 
+	font-size: 10pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	text-align: center; 
+}
+.version { 
+	font-size: 8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	text-align: center; 
+}
+.coursetextbox {
+	font-size: 8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	width: 100px;
+	background-color: transparent;
+	border: solid black 1px;
+}
+.buildingtextbox {
+	font-size: 8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	width: 100px;
+	background-color: transparent;
+	border: solid black 1px;
+}
+.commenttextbox {
+	font-size: 8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	width: 100px;
+	height: 40px;
+	background-color: transparent;
+	border: solid black 1px;
+}
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-style: normal;
+	line-height: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a.text {color: 003C96; text-decoration: none;}
+
+a.text:hover {color: 003C96; text-decoration: underline;}
+
+.navtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	color: #996600;
+	text-decoration: none;
+}
+
+a.navlink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-style: normal;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+a.navlink:hover { text-decoration: underline; color: 405679;}
+.pagetitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: 405679;
+	text-decoration: none;
+	font-weight: bold;
+}
+.sectitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: 405679;
+	text-decoration: none;
+}
+.schedulecell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	padding: 2px;
+}
+.timecell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	background-color: #F0F0E2;
+	font-size: 11px;
+	padding: 0px;
+}
+.daycell {
+	border: solid black 1px; 
+	empty-cells: show; 
+	font-size: 9px;
+	width: 65px;
+	height: 20px;
+	background-color: #F0F0E2;
+	font-size: 11px;
+	padding: 0px;
+}

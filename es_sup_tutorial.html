@@ -1,0 +1,123 @@
+<br><br><b>Supervisor Tutorial</b><br><br>
+
+Welcome to the Employee Scheduler Supervisor Tutorial.  This tutorial will guide you through setting up and working with the online Employee Scheduler.<br><br>
+This tutorial contains the following sections:
+<ol>
+	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#employees">Add Employees</a></li>
+	<li><a href="#areas">Create Areas and Positions</a></li>
+	<li><a href="#schedules">Create Position Schedules</a></li>
+	<li><a href="#assignments">Make Position Assignments</a></li>
+</ol>
+You may return to this tutorial at any time by clicking on the "Help" link in the upper right hand corner, and selecting "Supervisor Tutorial" from the help topics list.<br><br>
+<a name="intro"></a><hr>
+<br>
+<b>Introduction</b><br><br>
+The online Employee Scheduler is a tool that helps speed up the scheduling process and streamlines the dissemination of schedule information to employees.  
+It allows employees to login to the system and enter the hours they are available to work in a week and assign those hours preference levels.  
+Supervisors may then schedule their employees to work positions based on those hour preferences.<br><br>
+
+First, it would be helpful to understand the terminology used in the system and in the online help.  In this system, there are <b>areas, positions, supervisors, employeees, schedules, and assignments</b>.
+These objects are described in detail below:
+<ul>
+	<li><b>Areas</b> - Areas are a way to represent groupings of related positions.  Positions may only be assigned to a single area, but an area may have multiple positions.  An area also has one or more supervisors
+	assigned to administer it.</li>
+	<li><b>Positions</b> - Positions represent tasks or jobs that employees may be scheduled to work.  Every position belongs to one area and may have multiple schedules.</li>
+	<li><b>Employees</b> - Employees are persons who may login to the system and be scheduled to work at a position.  An employee may be assigned to one or more supervisors.  
+	An employee may administer one personal schedule which is assigned to them.</li>
+	<li><b>Supervisors</b> - Supervisors are persons who may login to the system and schedule their employees to work at positions.  Supervisors administer employees, areas, positions, and schedules.
+	At times supervisors may be viewed as employees in the system if they have been assigned to a supervisor and have entered a personal schedule for themselves. </li>
+	<li><b>Schedules</b> - Schedules represent time slots for employees and positions.  Employees may have one personal schedule.  Positions may have multiple schedules.  
+	This allows positions to have schedules that do not repeat weekly, such as weekend rotation shifts.</li>
+	<li><b>Assignments</b> -  Position assignments link a position's schedule with an employee's schedule.  Thus because a position assignment has been made, employees will see on their schedules which positions 
+	they are assigned to work.</li>
+</ul>
+The following organizational chart shows the relationships between these objects in a visual format:<br>
+<img src="images/es_orgchart.png"><br><br>
+
+As a supervisor, your steps to begin using the system are:
+<ol>
+	<li>Add employees to your employee list</li>
+	<li>Create your areas and positions</li>
+	<li>Create schedules for your positions</li>
+	<li>Assign employees to work on a position schedule</li>
+</ol>
+The rest of this tutorial will help guide you through these steps.<br><br>
+<a name="employees"></a><hr>
+<br>
+<b>Add Employees</b><br><br>
+To begin adding your employees, select the "Employees" link from the left-hand menubar.  To add a new employee select the "Add New Employee" link.  
+When adding or editing an employee, you have the option of selecting "Employee" or "LDAP Employee".  An "LDAP Employee" will use your institution's LDAP directory to authenticate your employee.  
+If you select "Employee" (without the LDAP) you will be asked to enter in a password for the employee.<br><br>
+
+The "Supervisor Notes" field is available for you to keep notes about an employee that the employee cannot access.  The Minimum and Maximum required hours can not be changed by the employee, and used when 
+employees and supervisors schedule an employee to work.  You will not be allowed to schedule an employee for more that the Maximum Required Hours.  The Minimum Required hours acts as a guide to the employee to make sure 
+that they have marked at least that many hours available in their schedules.  The Desired Hours field lets the employee enter the amount of hours they would like to work.  Again it provides a guide to you so that you do 
+not schedule an employee for more hours than they actually would prefer to work.<br><br>
+
+To add a photo of the employee, click the "Browse" button next to the "Upload Picture" field.  This will provide you with a window where you can choose a photo on your computer to upload to the site.  You can delete a 
+picture by checking the "Delete Picture" box.  You may replace a picture by uploading a new one.<br><br>
+
+You can assign an employee to multiple supervisors by holding down the control key and selecting the supervisor names from the "Supervisors" list box.  Using this box, you can transfer an employee to another Supervisor 
+by selecting their name from the list and unselecting your name.<br><br>
+
+More information about the Employees section of the system is available from the <a href="es_help.php?page=es_sup_employees.php">Editing Employees</a> help topic.<br><br>
+
+<a name="areas"></a><hr>
+<br>
+<b>Create Areas and Positions</b><br><br>
+
+Before creating areas and positions, you should first think through how you would like to organize them.  If you only have two or three positions, then you probably only need one area.  If you have more than five 
+positions, then you probably want to divide them into two or more related groups, and have an area for each of those groups.<br><br>
+
+To create an "Area" click on the <a href="es_sup_index.php">Areas &amp; Positions</a> link on the left-hand menu bar.  If you have already defined areas a list of those
+areas will appear in the middle section of the page along with their positions listed directly beneath them in a hierarchical fashion.  If you do not have any areas defined, then you
+will be prompted to create one.  Select the "Add New Area" link to create a new area.<br><br>
+
+When adding or editing an area, you are required to fill in a name for the area.  A description of the area is optional.  
+If you would like other supervisors to be able to work with this area, then select their name from the supervisors list.  You may select multple supervisors by holding down the "Control" key while 
+clicking on a name.  You can also assign an area to a different supervisor, by selecting their name from the list and unselecting your name from the list.<br><br>
+
+To add a position to an area, select the "add position" link to the right of the area's name.  
+Every position must have a name.  The description is optional, and can be used to describe the type of work that is generally performed by this position.  You can move 
+positions to different areas by selecting the area name from the drop down list.<br><br>
+
+<a name="schedules"></a><hr>
+<br>
+<b>Create Position Schedules</b><br><br>
+
+The next step, is to think through how many schedules you will need for each position.  A common schedule list for a position includes one weekly schedule that is the same every week, and two weekend schedules that
+alternate every other week.  For each schedule in the list, you will need to know the start date, end date, and how often the schedule repeats (ie. weekly, 2 weeks, 3 weeks, etc.).<br><br>
+
+To create a position schedules, click on the "schedule" link to the right of the position's name in the <a href="es_sup_index.php">Areas &amp; Positions list.</a><br><br>
+
+If this is a new created position, it will not have any schedules and you will be prompted to create one.  If this position already has a schedule assigned to it, then you may create a new schedule
+by selecting the "New" button.<br><br>
+
+Fill in the information for the schedule's name, repeat interval, and start and end times.  From this page you can also make position assignments.  You may make positions assignments as you create your schedules
+or you may create the schedules first and then return and make position assignments for them.<br><br>
+
+<a name="assignments"></a><hr>
+<br>
+<b>Make Position Assignments</b><br><br>
+
+There are two ways to make position assignments:
+<ol>
+	<li>From the position's schedule</li>
+	<li>From the employees' schedules</li>
+</ol>
+
+To make an assignment from the position's schedule, click on the schedule link to the right of the position's name in the <a href="es_sup_index.php">Areas &amp; Positions list.</a>  
+Then edit the schedule you want to make assignments for, by selecting the schedule from the drop-down menu and pressing the "Edit" button.  You will be taken to the position schedule
+editing page where you can change the schedule's parameters and make assignments.<br><br>
+The schedule will list the names of all of the employees who are available to work for a particular hour.  To make an assignment, simply check the box next to the name of the employee 
+for the hour you would like them to work.  Then select the "Save Schedule" button.<br><br>
+
+To make an assignment from an employee's schedule, select the "view schedule" to the right of the employee's name on the <a href="es_sup_employees.php">Employee List</a>.  Then press the "Edit Schedule" Button.
+Assign them to positions by choosing the position schedule from the "Assign to Position" drop down list.  Then hit the "Change Position Schedule" button.  If you would like to see the position's
+schedule along with the employee's schedule, then also check the "Show this schedule" checkbox.  All of the position assignments for this position schedule will appear in the boxes under the employee's schedule
+in the same color text as the background of the "Assign to Position" box.  You can schedule employees to work during a position schedule by select the "Assign to Position" option and then selecting a box 
+on the schedule grid.<br><br>
+
+You may remove a position assignment by selecting the "Unavailable" option and clicking over the assignment you want to remove.  You may change the position/schedule for which they are scheduled to work by selecting a 
+different schedule name in the drop down list and then selecting the same box again.<br><br>

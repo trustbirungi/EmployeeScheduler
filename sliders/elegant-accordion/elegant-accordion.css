@@ -1,0 +1,101 @@
+ul.accordion li {
+	background-repeat: no-repeat;
+	background-position:  top left;
+}
+ul.accordion li.bg1 {
+	background-image:url(../../images/sliders/img_01.jpg);
+	background-position: -100px 0;
+}
+ul.accordion li.bg2 {
+	background-image:url(../../images/sliders/img_02.jpg);
+	background-position: -100px 0;
+}
+ul.accordion li.bg3 {
+	background-image:url(../../images/sliders/img_03.jpg);
+	background-position: -50px 0;
+}
+ul.accordion li.bg4 {
+	background-image:url(../../images/sliders/img_04.jpg);
+	background-position: -100px 0;
+}
+ul.accordion li.bg5 {
+	background-image:url(../../images/sliders/img_05.jpg);
+	background-position: -150px 0;
+}
+
+.elegant-slider {
+	position: relative;
+	overflow:hidden;
+	margin:0 auto 2em;
+	width:770px;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	box-shadow: 0 10px 10px rgba(0,0,0,.05);
+}
+
+.accordion {
+	clear: both;
+    overflow: hidden;
+	margin:0;   
+	background:#fff;
+    list-style:none;
+}
+
+.accordion li {
+	top: 0;
+	left: 0;
+    float: left;
+    height: 415px;
+	padding:0;
+    display: block;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+}
+
+.accordion div {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+	padding: 15px 45px 15px 45px;
+    opacity: 0;
+	filter: alpha(opacity=0);
+	background: url(pattern.png) repeat;
+}
+
+.accordion div h3 {	
+    padding: 0;
+	margin-bottom: .2em;
+    opacity: 1;
+	filter: alpha(opacity=100);
+    background: none;
+    font-weight: 100;
+    font-size: 1.833em;
+    color: #fff;
+    text-align: left;
+}
+
+.accordion div p {
+	color: #bbb;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.accordion div a {	
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+	color:#85b602;
+}
+
+.accordion div a:hover {
+    text-decoration: underline;
+}
