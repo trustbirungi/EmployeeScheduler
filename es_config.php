@@ -19,8 +19,8 @@ if (strstr($_SERVER["PHP_SELF"],"config.php")) {
 //- Database Connection variables 
 $DBHOST = "localhost";			//- MySQL Database Host
 $DBNAME = "scheduler";		//- MySQL Database Name
-$DBUSER = "diamondtrust66";			//- MySQL DB Username
-$DBPASS = "73andromeda73";			//- MySQL DB Userpassword
+$DBUSER = "username";			//- MySQL DB Username
+$DBPASS = "password";			//- MySQL DB Userpassword
 
 //-- LDAP Authentication variables
 $LDAP_HOST = "ldaps://ldap.yourdomain.com";	//-- LDAP Host URL
